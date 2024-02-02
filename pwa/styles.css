@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.app-container {
+    justify-content: center;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.app img {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+}
+
+img {
+  border-radius: 15px;
+}
+
+.app-icon-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.app-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.app-info {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-pwa {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-apk {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* .download-apk:hover,
+.download-pwa:hover {
+    background-color: #0c7cd5;
+} */
+
+/* .add-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #0c7cd5;
+} */
+
+.download-button,
+.second-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-button {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.second-button {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.size-info {
+    font-size: 14px;
+    color: #565454;
+    margin-right: auto
+}
+
+.app-desc {
+    font-size: 12px;
+    margin: 5px;
+    color: #565454;
+}
+
+.app-name {
+    margin: 5px;
+    color: #2b2a2a;
+}

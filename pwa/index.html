@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="theme-color" content="#2196F3"> -->
+    <title>My Apps</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container"></div>
+
+    <script>
+        const apps = [
+            {
+                name: "Starbucks",
+                icon: "https://play-lh.googleusercontent.com/qrmolFrTzWjD7o_vVZ8bcQj0WM8-AI4fhJzg-L3ecLCLUJc9vNWOQ1MmkKQA2RN69C0u",
+                apk: "https://docstore3.indusappstore.com/external/apks/apks_d-DX9owBKtfQ2b_piSbT.zip?h=0kI716LZN%2FQoeqb1CXvx3iieIS8cT6ztfLIp5TAAMww%3D&e=1707026781151",
+                manifest: '/app1-manifest.json',
+                serviceWorker: '/app1-sw.js',
+                pwaSize: "100 KB",
+                apkSize: "40 MB",
+                shortDescription: "",
+                description: "The Starbucks® app is a convenient way to order ahead for pickup, scan and pay in-store and customize your favorites.",
+                manifestUrl: "https://app.starbucks.com"
+            },
+            {
+                name: "MakeMyTrip - Flights & Hotels",
+                icon: "https://play-lh.googleusercontent.com/19I7zjhAAAud9AztLiIxD1MYVdHusoeaW2-7Fx2FUJvcVZBbUBcGKjBBVPsHkFBLWMs",
+                apk: "https://docstore3.indusappstore.com/external/apks/apks_d-DX9owBKtfQ2b_piSbT.zip?h=0kI716LZN%2FQoeqb1CXvx3iieIS8cT6ztfLIp5TAAMww%3D&e=1707026781151",
+                manifest: '/app1-manifest.json',
+                serviceWorker: '/app1-sw.js',
+                pwaSize: "200 KB",
+                apkSize: "60 MB",
+                description: "Ready to explore the world? 🌎✈️ Download Asia's #1 travel booking app, MakeMyTrip, for a hassle-free travel experience.",
+                manifestUrl: "https://www.makemytrip.com/"
+            },
+            {
+                name: "The Weather Channel - Radar",
+                icon: "https://play-lh.googleusercontent.com/RV3DftXlA7WUV7w-BpE8zM0X7Y4RQd2vBvZVv6A01DEGb_eXFRjLmUhSqdbqrEl9klI",
+                apk: "https://docstore3.indusappstore.com/external/apks/apks_d-DX9owBKtfQ2b_piSbT.zip?h=0kI716LZN%2FQoeqb1CXvx3iieIS8cT6ztfLIp5TAAMww%3D&e=1707026781151",
+                manifest: '/app1-manifest.json',
+                serviceWorker: '/app1-sw.js',
+                pwaSize: "80 KB",
+                apkSize: "30 MB",
+                description: "The Weather Channel is the World's Most Accurate Forecaster**. Prepare for hurricane season with our local rain radar and live updates to keep you informed and safe.",
+                manifestUrl: "https://weather.com/"
+            },
+            {
+                name: "BookMyShow | Movies & Events",
+                icon: "https://play-lh.googleusercontent.com/hk8iQXXkhogZ0sGk9NW7DH6sDxz0JiD1RKhpnnHaffRyYbEAkmxYY8vSjG7J4dnuXgo",
+                apk: "https://docstore3.indusappstore.com/external/apks/apks_d-DX9owBKtfQ2b_piSbT.zip?h=0kI716LZN%2FQoeqb1CXvx3iieIS8cT6ztfLIp5TAAMww%3D&e=1707026781151",
+                manifest: '/app1-manifest.json',
+                serviceWorker: '/app1-sw.js',
+                pwaSize: "150 KB",
+                apkSize: "50 MB",
+                description: "With BookMyShow, discover the latest movies, biggest concerts, most awaited sporting events, plays, and various other LIVE event experiences.",
+                manifestUrl: "https://in.bookmyshow.com/select/region?referer=%2F"
+            },
+            {
+                name: "trivago: Compare hotel prices",
+                icon: "https://play-lh.googleusercontent.com/S-uKFKA_z8CAE066aYFtgovhyDFTknOPzH8dcUHfUtCl8yYmizSewRf-nGWX-BIGqJkn",
+                apk: "https://docstore3.indusappstore.com/external/apks/apks_d-DX9owBKtfQ2b_piSbT.zip?h=0kI716LZN%2FQoeqb1CXvx3iieIS8cT6ztfLIp5TAAMww%3D&e=1707026781151",
+                manifest: '/app1-manifest.json',
+                serviceWorker: '/app1-sw.js',
+                pwaSize: "130 KB",
+                apkSize: "45 MB",
+                description: "The trivago app is the easy way to search and compare hotel prices from your favorite booking sites so you can find a hotel or accommodation in the location you want.",
+                manifestUrl: "https://trivago.com/"
+            },
+            {
+                name: "Tinder Dating app. Meet People",
+                icon: "https://play-lh.googleusercontent.com/fDpoqIbZ884ylRnMK8Lx9Fu4DsLQk5yt4f9WkxeOAPpGnzc9BTi_YKkMsLvoMdx7Uzg",
+                apk: "https://docstore3.indusappstore.com/external/apks/apks_d-DX9owBKtfQ2b_piSbT.zip?h=0kI716LZN%2FQoeqb1CXvx3iieIS8cT6ztfLIp5TAAMww%3D&e=1707026781151",
+                manifest: '/app1-manifest.json',
+                serviceWorker: '/app1-sw.js',
+                pwaSize: "250 KB",
+                apkSize: "100 MB",
+                description: "The trivago app is the easy way to search and compare hotel prices from your favorite booking sites so you can find a hotel or accommodation in the location you want.",
+                manifestUrl: "https://tinder.com/"
+            }
+        ];
+
+        const appContainer = document.querySelector('.app-container');
+        apps.forEach(app => {
+            const appDiv = document.createElement('div');
+            appDiv.classList.add('app');
+            const appIcon = document.createElement('img');
+            appIcon.src = app.icon;
+            appIcon.alt = app.name;
+            const appIconNameDiv = document.createElement('div');
+            appIconNameDiv.classList.add('app-icon-name');
+            const appInfo = document.createElement('div');
+            appInfo.classList.add('app-info');
+            const appName = document.createElement('h3');
+            appName.classList.add('app-name');
+            appName.textContent = app.name;
+            const appDesc = document.createElement('span');
+            appDesc.classList.add('app-desc');
+            appDesc.textContent = app.description;
+            const buttonsContainer = document.createElement('div');
+            buttonsContainer.classList.add('buttons-container');
+            const apkButton = document.createElement('button');
+            apkButton.classList.add('download-apk');
+            apkButton.classList.add('download-button');
+            apkButton.setAttribute("onclick", "downloadFile()");
+            apkButton.dataset.apk = app.apk;
+            // apkButton.textContent = 'Download APK';
+            apkButton.innerHTML = '<i class="fas fa-arrow-down"></i>';
+            const pwaButton = document.createElement('button');
+            pwaButton.classList.add('download-pwa');
+            pwaButton.classList.add('second-button');
+            pwaButton.dataset.manifest = app.manifest;
+            pwaButton.dataset.manifestUrl = app.manifestUrl;
+            pwaButton.dataset.serviceWorker = app.serviceWorker;
+            pwaButton.innerHTML = '<i class="fas fa-play"></i>';
+            // pwaButton.textContent = 'Download PWA';
+            const sizeInfoApk = document.createElement('span');
+            sizeInfoApk.classList.add('size-info');
+            sizeInfoApk.textContent = `${app.apkSize}`;
+            const sizeInfoPwa = document.createElement('span');
+            sizeInfoPwa.classList.add('size-info');
+            sizeInfoPwa.textContent = `${app.pwaSize}`;
+            buttonsContainer.appendChild(apkButton);
+            buttonsContainer.appendChild(sizeInfoApk);
+            buttonsContainer.appendChild(pwaButton);
+            buttonsContainer.appendChild(sizeInfoPwa);
+            appInfo.appendChild(appName);
+            appInfo.appendChild(appDesc);
+            appInfo.appendChild(buttonsContainer);
+            appIconNameDiv.appendChild(appIcon);
+            appDiv.appendChild(appIconNameDiv);
+            appDiv.appendChild(appInfo);
+            appContainer.appendChild(appDiv);
+        });
+
+        const apkButtons = document.querySelectorAll('.download-apk');
+        apkButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const apkUrl = button.dataset.apk;
+                // const a = document.createElement('a');
+                // a.href = apkUrl;
+                // a.download = true;
+                // a.click();
+
+                const link = document.createElement("a");
+                link.href = apkUrl;
+                link.download = "twitter.apk";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        });
+
+        function downloadFile() {
+                // const apkUrl = "https://proddocstore-az.appbazaar.com/public/external/indus-videos/videos/insta-Coe1_66JrFE-d0eb81df366b19e5e8d9d738e0307add.mp4";
+                // const link = document.createElement("a");
+                // link.href = apkUrl;
+                // link.download = "somefile.mp4";
+                // document.body.appendChild(link);
+                // link.click();
+                // document.body.removeChild(link);
+            }
+
+        // const pwaButtons = document.querySelectorAll('.download-pwa');
+        // pwaButtons.forEach(button => {
+        //     button.addEventListener('click', () => {
+        //         console.log("PWA button clicked");
+        //         const manifestUrl = button.dataset.manifest;
+        //         const serviceWorkerUrl = button.dataset.serviceWorker;
+        //         if ('serviceWorker' in navigator) {
+        //             window.addEventListener('load', function () {
+        //                 navigator.serviceWorker.register(serviceWorkerUrl).then(function (registration) {
+        //                     console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        //                 }, function (err) {
+        //                     console.log('ServiceWorker registration failed: ', err);
+        //                 });
+        //             });
+        //         }
+        //         let deferredPrompt;
+        //         const addBtn = document.querySelector('.add-button');
+        //         window.addEventListener('beforeinstallprompt', (e) => {
+        //             e.preventDefault();
+        //             deferredPrompt = e;
+        //             addBtn.style.display = 'block';
+        //             addBtn.addEventListener('click', () => {
+        //                 addBtn.style.display = 'none';
+        //             });
+        //             deferredPrompt.prompt();
+        //             deferredPrompt.userChoice.then((choiceResult) => {
+        //                 if (choiceResult.outcome === 'accepted') {
+        //                     console.log('User accepted the A2HS prompt');
+        //                 } else {
+        //                     console.log('User dismissed the A2HS prompt');
+        //                 }
+        //                 deferredPrompt = null;
+        //             });
+        //         });
+        //     });
+        // });
+
+        const pwaButtons = document.querySelectorAll('.download-pwa');
+            pwaButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    console.log("PWA button clicked");
+                    const apkUrl = button.dataset.manifestUrl;
+                    const link = document.createElement("a");
+                    link.href = apkUrl;
+                    link.download = "twitter.apk";
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+
+                    // try {
+                    //     // const manifest = button.dataset.manifest;
+                    //     // const manifest = button.dataset.manifest;
+                    //     const manifest = {
+                    //         "name": "Starbucks",
+                    //         "short_name": "Starbucks",
+                    //         "description": "Starbucks Progressive Web App",
+                    //         "start_url": "https://app.starbucks.com",
+                    //         "display": "fullscreen",
+                    //         "background_color": "#ffffff",
+                    //         "theme_color": "#00704a",
+                    //         "icons": [
+                    //             {
+                    //                 "src": "https://upload.wikimedia.org/wikipedia/en/d/d3/Starbucks_Corporation_Logo_2011.svg",
+                    //                 "sizes": "192x192",
+                    //                 "type": "image/png"
+                    //             }
+                    //         ],
+                    //         "splash_pages": null,
+                    //         "prefer_related_applications": false,
+                    //         "related_applications": [],
+                    //         "categories": [
+                    //             "food",
+                    //             "drink"
+                    //         ],
+                    //         "screenshots": [],
+                    //         "orientation": "any",
+                    //         "apk": "",
+                    //         "serviceWorker": "/app1-sw.js"
+                    //     };
+
+                    //     // Trigger the installation prompt
+                    //     if (window && window.navigator && window.navigator.standalone === false) {
+                    //         console.log("window", window);
+                    //         const deferredPrompt = window.navigator.serviceWorker.controller;
+                    //         console.log("window", deferredPrompt);
+
+                    //         if (deferredPrompt) {
+                    //             deferredPrompt.postMessage({
+                    //                 type: 'MANIFEST',
+                    //                 manifest
+                    //             });
+                    //         }
+                    //     }
+                    // } catch (error) {
+                    //     console.error('Error fetching or processing manifest:', error);
+                    // }
+                });
+            });
+    </script>
+</body>
+
+</html>
