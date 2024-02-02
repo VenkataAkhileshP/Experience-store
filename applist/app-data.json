@@ -27,7 +27,7 @@
                     "manifestPath": "",
                     "instantGame": false,
                     "instantGameLink": "",
-                    "page":"sharemarket"
+                    "page":"/appdetails?app=sharemarket"
                 },
                 {
                     "package": "com.twitter.com",
@@ -47,7 +47,7 @@
                     "manifestPath": "",
                     "instantGame": false,
                     "instantGameLink": "",
-                    "page":"twitter"
+                    "page":"/twitter"
                 },
                 {
                     "package": "com.nasa.com",
@@ -66,7 +66,8 @@
                     "pwaSize": "",
                     "manifestPath": "",
                     "instantGame": false,
-                    "instantGameLink": ""
+                    "instantGameLink": "",
+                    "page":"/nasa"
                 },
                 {
                     "package": "com.inance",

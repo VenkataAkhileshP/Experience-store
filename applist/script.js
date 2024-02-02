@@ -100,5 +100,5 @@ function showAppDetailsModal(app) {
     //     }
     // });
 
-    window.location.href = `/appdetails?app=${app.page}`
+    window.location.href = app.page;
 }
